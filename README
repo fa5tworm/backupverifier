@@ -1,0 +1,33 @@
+BackupVerifier
+==============
+
+BackupVerifier is a Perl module that provides methods to calculate and verify the SHA-256 checksum of files. This is useful for ensuring the integrity of backup files.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+    perl Makefile.PL
+    make
+    make test
+    make install
+
+USAGE
+
+    use BackupVerifier;
+
+    my $verifier = BackupVerifier->new();
+    
+    my $checksum = $verifier->calculate_checksum('path/to/backup.tar.gz');
+    print "Checksum: $checksum\n";
+    
+    my $is_valid = $verifier->verify_checksum('path/to/backup.tar.gz', 'expected_checksum_value');
+    if ($is_valid) {
+        print "Backup is valid.\n";
+    } else {
+        print "Backup is corrupted.\n";
+    }
+
+COPYRIGHT AND LICENSE
+
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.

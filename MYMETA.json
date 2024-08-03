@@ -1,0 +1,53 @@
+{
+   "abstract" : "A module to verify the integrity of backup files.",
+   "author" : [
+      "Otmane Echaibi <sudotoo@protonmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "ExtUtils::MakeMaker version 7.62, CPAN::Meta::Converter version 2.150010",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "BackupVerifier",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "Digest::SHA" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/fa5tworm/BackupVerifier/issues"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/fa5tworm/BackupVerifier.git",
+         "web" : "https://github.com/fa5tworm/BackupVerifier"
+      }
+   },
+   "version" : "1.0",
+   "x_serialization_backend" : "JSON::PP version 4.06"
+}
